@@ -6,6 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "repro-process-env",
 	"main": "api/index.ts",
+	"compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
 	"compatibility_date": "2025-03-11",
 	"assets": {
 		"not_found_handling": "single-page-application",

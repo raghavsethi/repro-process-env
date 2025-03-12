@@ -3,8 +3,11 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname.startsWith("/api/")) {
+      // ISSUE REPRO HERE:
       return Response.json({
-        name: "Cloudflare",
+        name: `Env var value: ${
+          process.env.EXAMPLE_ENV_VAR_KEY
+        }, all env: ${JSON.stringify(process.env)}`,
       });
     }
 
