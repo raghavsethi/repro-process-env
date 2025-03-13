@@ -14,6 +14,9 @@
 	},
 	"observability": {
 		"enabled": true
+	},
+	"vars": {
+		"EXAMPLE_ENV_VAR_KEY": "EXAMPLE_ENV_VAR_VALUE_FROM_WRANGLER"
 	}
 	/**
 	 * Smart Placement
